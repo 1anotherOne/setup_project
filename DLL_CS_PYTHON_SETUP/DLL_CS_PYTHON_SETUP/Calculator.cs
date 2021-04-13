@@ -4,19 +4,19 @@ namespace Calculate
 {
     public class Calculator
     {
-        public int Add(int x, int y)
+        public double Add(double x, double y)
         {
             return x + y;
         }
-        public int Substract(int x, int y)
+        public double Substract(double x, double y)
         {
             return x - y;
         }
-        public int Multiply(int x, int y)
+        public double Multiply(double x, double y)
         {
             return x * y;
         }
-        public int Devide(int x, int y)
+        public double Devide(double x, double y)
         {
             return x / y;
         }

@@ -22,12 +22,22 @@ namespace SampleCS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label3.Text = calculator.Add(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text)).ToString();
+            label3.Text = calculator.Add(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)).ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label10.Text = calculator.Substract(Convert.ToInt32(textBox4.Text), Convert.ToInt32(textBox3.Text)).ToString();
+            label10.Text = calculator.Substract(Convert.ToDouble(textBox4.Text), Convert.ToDouble(textBox3.Text)).ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label11.Text = calculator.Multiply(Convert.ToDouble(textBox6.Text), Convert.ToDouble(textBox5.Text)).ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label12.Text = calculator.Devide(Convert.ToDouble(textBox8.Text), Convert.ToDouble(textBox7.Text)).ToString();
         }
     }
 }
